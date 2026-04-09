@@ -23,6 +23,7 @@ ChatKid is a research prototype of a child-centered chatbot designed to support 
 
 Before running the prototype, make sure you have:
 
+- Visual Studio Code installed
 - A modern web browser
 - Ollama installed on your computer
 - The `llama3.2:1b` model downloaded locally

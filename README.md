@@ -33,7 +33,7 @@ Before running the prototype, make sure you have:
 Visual Studio Code is used to open and run the project files.
 
 - Download and install **Visual Studio Code**
-- Open the ChatKid project folder inside VS Code
+- Open the ChatKid Prototype project folder inside VS Code
 
 ### 2. A Modern Web Browser
 
@@ -64,6 +64,8 @@ ollama pull llama3.2:1b
 ```
 
 This command downloads the required model to your local machine.
+Or, 
+You can find the `llama3.2:1b` model by searching for it in Ollama and download it manually.
 
 ## Step-by-Step Instructions to Run ChatKid
 
@@ -87,22 +89,11 @@ Open a terminal in **Visual Studio Code** and run:
 ollama pull llama3.2:1b
 ```
 
-### Step 4: Check the API configuration
-
-Make sure the JavaScript configuration is:
-
-```javascript
-const CONFIG = {
-  apiUrl: "http://127.0.0.1:11434/api/chat",
-  model: "llama3.2:1b",
-};
-```
-
-### Step 5: Open a new terminal in VS Code
+### Step 4: Open a new terminal in VS Code
 
 In **Visual Studio Code**, open a **new terminal**.
 
-### Step 6: Run the local server
+### Step 5: Run the local server
 
 In the new terminal, run:
 
@@ -112,7 +103,7 @@ python -m http.server 8000 -d docs
 
 This starts a local server using the `docs` folder.
 
-### Step 7: Open the prototype in your browser
+### Step 6: Open the prototype in your browser
 
 After the server starts, open your browser and go to:
 
@@ -120,25 +111,11 @@ After the server starts, open your browser and go to:
 http://127.0.0.1:8000/
 ```
 
-### Step 8: Start using ChatKid
+### Step 7: Start using ChatKid
 
 You can now interact with the chatbot in your browser.
 
 - If the question is allowed, ChatKid will respond.
 - If the question is restricted, ChatKid will show a warning and give the option to notify a parent.
 
-## Local API Address
 
-This prototype connects to the local Ollama API at:
-
-```text
-http://127.0.0.1:11434/api/chat
-```
-
-## Local Website Address
-
-After starting the local server, open the prototype at:
-
-```text
-http://127.0.0.1:8000/
-```
